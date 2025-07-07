@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#000000"
+    tools:context=".HelpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <!-- Centered Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Help and Information"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:paddingBottom="18dp" />
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Automated Angle of Repose Measurement Using Image Processing"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#48CAE4"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This application is designed to measure the angle of repose of pharmaceutical powders using image processing. It classifies materials based on predefined stability criteria, replacing manual measurement techniques."
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:paddingBottom="25dp" />
+
+            <!-- Angle Calculation -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Angle Calculation"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#48CAE4"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The app calculates the angle using the formula (where two slopes meet):\n\ncos(θ) = (a² + b² – c²) / 2ab"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:paddingBottom="25dp" />
+
+            <!-- Classification Logic -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Classification Logic"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#48CAE4"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" • Excellent: 25° - 30°\n
+• Good: 31° - 35°\n
+• Fair: 36° - 40°\n
+• Passable: 41° - 45°\n
+• Poor: 46° - 55°\n
+• Very Poor: 56° - 65°\n
+• Poorest: More than 66°\n
+• Angle Too Small: Less than 25°"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:paddingBottom="25dp" />
+
+            <!-- How It Works -->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="How It Works"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textColor="#48CAE4"-->
+<!--                android:paddingBottom="8dp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="1. Image Loading (Capture an image using the Camera button or load from Gallery)\n\n-->
+<!--2. Placing Points (Tap to mark three key points on the material pile)\n-->
+<!--   • Point 1: Peak (apex) of the pile.\n-->
+<!--   • Point 2 & 3: Base of the pile.\n\n-->
+<!--3. Line Drawing (The app connects the points with red lines)\n\n-->
+<!--4. Angle Calculation (Uses the Cosine Rule to determine the angle at the intersection)\n\n-->
+<!--5. Classification (Instead of displaying the exact angle, the app categorizes it based on stability ranges (e.g., 'Excellent', 'Poor')).\n\n-->
+<!--6. Interactivity (Drag points to adjust selection dynamically)\n\n-->
+<!--7. Undo & Reset (Remove the last placed point or reset the process)\n\n-->
+<!--8. Save (Click the Save icon to store the image in your gallery)\n\n-->
+<!--9. Message Area & Alerts (Provides step-by-step guidance and alerts to the user)"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:paddingBottom="20dp" />-->
+
+            <!-- Contact Info -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Information"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#48CAE4"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Principal Investigator:\n
+Prof. Vinayak Mukkawar\n
+Asst. Prof. at NMIMS Hyderabad\n
+vinayak.mukkawar@nmims.edu\n\n
+
+Co-Investigator:\n
+Prof. Vinayak Mukkawar\n
+Asst. Prof. at NMIMS Hyderabad\n
+vinayak.mukkawar@nmims.edu\n\n
+
+Developed by:\n
+Harsh Bang\n
+B.Tech CSE DS undergrad at NMIMS Hyderabad\n
+harshbang10@gmail.com"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:paddingBottom="30dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
